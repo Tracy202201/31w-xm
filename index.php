@@ -12,9 +12,9 @@
  * @package mon_31w
  */
 
-wp_head(); ?>
+get_header(); ?>
 <h1>Mon premier modele WordPress</h1>
 
 
 
-<?php wp_footer(); ?>
+<?php get_footer(); ?>
