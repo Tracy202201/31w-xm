@@ -9,3 +9,6 @@ functions.php
 header.php
 footer.php
 readme.md
+
+Pour plus d'information sur la conception de theme 
+[WP developper guide] (Https://developper.wordpress.org/theme)
