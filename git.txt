@@ -11,5 +11,10 @@ si on a cree un repo dans le faux place, on pourrait supprimer .git directment
 7. git remote -v
 8. git push -u origin main  (apres /e/xampp/htdocs/31w/wp-content/themes/31w-xm (main) )
 
-Note: git log --oneline (permet de voir tous les commit)
-markdown: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax 
+Note: 
+git log --oneline (permet de voir tous les commit)
+git branch nom (pour creer un branch)
+git checkout nom(pour aller branch deja cree)
+git branch (pour voir combien de repo)
+
+creer un git remote depo(si depo n'existe pas dans github) -->git remote add https://github.com/Tracy202201/31w-xm 
