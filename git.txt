@@ -10,10 +10,10 @@ si on a cree un repo dans le faux place, on pourrait supprimer .git directment
 6. git remore add origin https://github.com/Tracy202201/31w-xm.git
 7. git remote -v
 8. git push -u origin main  (apres /e/xampp/htdocs/31w/wp-content/themes/31w-xm (main) )
+9. git push --set-upstream origin exercice1 (/e/xampp/htdocs/31w/wp-content/themes/31w-xm (exercice1))
 
-8. git push --set-upstream origin exercice1 (/e/xampp/htdocs/31w/wp-content/themes/31w-xm (exercice1))
-
-Note: git log --oneline (permet de voir tous les commit)
+Note: 
+git log --oneline (permet de voir tous les commit)
 markdown: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax 
 
 creer un nouveau depo 31w-cours (pull les dossiers de prof) dans cle usb
