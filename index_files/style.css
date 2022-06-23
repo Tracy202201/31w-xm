@@ -1,9 +1,9 @@
 @charset "UTF-8";
-/*! 
-Theme Name: 31W-exercice-1 
-Author: Xiaowei MA
-Author URI: https://github.com/Tracy202201/31w-xm
-Description: Thème de base pour le cours de 31W
+/*!
+Theme Name: 31w-AG-exercice1
+Author: Annabelle Gamache
+Author URI: https://github.com/annabellegamache/31w-AG.git
+Description: Thème de base pour le cours 582-31w : Introduction à un gestionnnaire de contenu
 Version: 1.0.0
 Tested up to: 5.4
 Requires PHP: 5.4
@@ -14,11 +14,6 @@ Text Domain: 31-w
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Variable
-	-couleur
-	-police
-	-dimension
-
 # Generic
 	- Normalize
 	- Box sizing
@@ -27,20 +22,23 @@ Text Domain: 31-w
 	- Elements
 	- Links
 	- Forms
-## Layout
-# Composent
+## Layouts
+# Components
 	- Navigation
 	- Posts and pages
+	- Comments
 	- Widgets
 	- Media
+	- Captions
 	- Galleries
-# plugin
-
+# plugins
+	- Jetpack infinite scroll
 # Utilities
 	- Accessibility
 	- Alignments
 
 --------------------------------------------------------------*/
+/*Custom*/
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -372,7 +370,7 @@ html {
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
-/* variable
+/* Typography
 --------------------------------------------- */
 body,
 button,
@@ -451,6 +449,23 @@ big {
 --------------------------------------------- */
 body {
   background: #fff;
+}
+
+/**
+* Styles pour h1,h2,h3,h4,h5,h6 et p
+*/
+h1, h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: #608094;
+}
+
+h3, h4, h5, h6, p {
+  color: #608094;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 5vw, 5rem);
+  /*permet à une taille de police de caractères de varier sans être minuscule et illisible et sans non plus être énorme.*/
 }
 
 hr {
@@ -532,6 +547,7 @@ a:hover, a:active {
 
 /* Forms
 --------------------------------------------- */
+.bouton,
 button,
 input[type="button"],
 input[type="reset"],
@@ -545,6 +561,7 @@ input[type="submit"] {
   padding: 0.6em 1em 0.4em;
 }
 
+.bouton:hover,
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -552,7 +569,9 @@ input[type="submit"]:hover {
   border-color: #ccc #bbb #aaa;
 }
 
-button:active, button:focus,
+.bouton:active, .bouton:focus,
+button:active,
+button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
 input[type="reset"]:active,
@@ -610,37 +629,73 @@ select {
 textarea {
   width: 100%;
 }
+
+/*--------------------------------------------------------------
+# Layouts
+ 
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+/* Jetpack infinite scroll
+--------------------------------------------- */
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+/* Accessibility
+--------------------------------------------- */
+/* Alignments
+--------------------------------------------- */
 /*# sourceMappingURL=style.css.map */
 
+body{
+  margin:1em;
+  background-color: #000;
+}
 
-/* a supprimer */
+h1.site-title{
+  margin-top:0;
+  margin-bottom:0;
+}
 
-.article_section {
+section.site__branding {
+  text-align: center;
+}
+
+h1.front-page{
+  text-align: center;
+}
+
+div.carte-cours-flex{
   display: flex;
+  justify-content:center;
+  justify-items: center;
   flex-wrap: wrap;
-  column-gap: 20px;
-  row-gap: 20px;
-  justify-content: center;
-
-
-  max-width: 1500px;
-  margin-left: auto;
-  margin-right: auto;
+  gap: 20px;
 }
 
-
-
-.article_cours {
-  position: relative;
-
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  padding: 10px 30px;
-  max-width: 50ch;
-  min-height: 400px;
+div.carte-cours-flex > div{
+  max-width: 30%;
+  border:1px solid #111;
+  border-radius: 10px;
+  padding:10px;
 }
 
-.article_bouton {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
+div.carte-cours-flex > div{
+  max-width: 30%;
+}
+
+div.carte-cours-flex > div{
+  max-width: 30%;
+}
+
+div.carte-cours-flex > div > a.bouton{
+  display: inline-block;
+  margin-top:20px;
+  text-decoration: none;
 }
