@@ -32,3 +32,7 @@
                 
             </nav>
         </header>
+
+        <section class="site__sidebar">
+            <h3 class="">sidebar</h3>
+        </section>

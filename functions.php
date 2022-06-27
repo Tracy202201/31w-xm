@@ -7,12 +7,7 @@
  * @package 31w-XM
  */
 
-if ( ! defined( '_S_VERSION' ) ) {
-   
-    define( '_S_VERSION', '1.0.0' );
-}
-
-function mon_31w_setup() {
+function mon31w_setup() {
     /*
         * Let WordPress manage the document title.
         * By adding theme support, we declare that this theme does not use a
@@ -24,12 +19,15 @@ function mon_31w_setup() {
 	add_theme_support( 'custom-background' );
   
 }
-add_action( 'after_setup_theme', 'mon_31w_setup' );
+add_action( 'after_setup_theme', 'mon31w_setup' );
 
 function mon_31w_enqueue() {
 	wp_enqueue_style( 'mon_31w-style', 
                         get_stylesheet_uri(), 
-                        array());
+                        array(),
+                        filemtime(get_template_directory() . '/style.css'));
+    wp_enqueue_style('31w-google-font', 
+                        "https://fonts.googleapis.com/css2?family=Anek+Latin&family=Playfair+Display:ital,wght@0,400;0,600;1,900&display=swap", false);
 	
 }
 add_action( 'wp_enqueue_scripts', 'mon_31w_enqueue' );

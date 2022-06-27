@@ -1,3 +1,32 @@
+/* style du content des article */
+
 .article_section {
-    background-color: chocolate;
-}
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+  
+  
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  
+  .article_cours {
+    position: relative;
+  
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px 30px;
+    max-width: 50ch;
+    min-height: 400px;
+  }
+  
+  .article_bouton {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+  

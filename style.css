@@ -18,7 +18,6 @@ Text Domain: 31-w
 	-couleur
 	-police
 	-dimension
-
 # Generic
 	- Normalize
 	- Box sizing
@@ -41,6 +40,8 @@ Text Domain: 31-w
 	- Alignments
 
 --------------------------------------------------------------*/
+/* variable
+--------------------------------------------- */
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -217,9 +218,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -227,9 +228,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -238,9 +239,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -284,8 +285,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box;
   padding: 0;
 }
@@ -293,8 +294,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -302,7 +303,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
@@ -310,7 +311,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -372,85 +373,77 @@ html {
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
-/* variable
+/* Elements
 --------------------------------------------- */
-body,
-button,
-input,
-select,
-optgroup,
-textarea {
-  color: #404040;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
+/* style du content des article */
+.article_section {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-content: center;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
+.article_cours {
+  position: relative;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 10px 30px;
+  max-width: 50ch;
+  min-height: 400px;
+}
+
+.article_bouton {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+body {
+  background: #fff;
+}
+
+/**
+*
+* styles pour h1,h2,h3,h4,h5,h6 et p
+*/
+h1, h2 {
+  font-family: #666666;
+}
+
+h2, h3, h4, h5, h6, p {
+  font-family: #1a1a1a;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 5rem);
+  font-family: "Anek Latin", sans-serif;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.3rem, 2.5vw, 2.5rem);
+}
+
+h4 {
+  font-size: clamp(1.2rem, 2vw, 2rem);
+}
+
+h5 {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
 h6 {
-  clear: both;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
 p {
-  margin-bottom: 1.5em;
-}
-
-dfn,
-cite,
-em,
-i {
-  font-style: italic;
-}
-
-blockquote {
-  margin: 0 1.5em;
-}
-
-address {
-  margin: 0 0 1.5em;
-}
-
-pre {
-  background: #eee;
-  font-family: "Courier 10 Pitch", courier, monospace;
-  line-height: 1.6;
-  margin-bottom: 1.6em;
-  max-width: 100%;
-  overflow: auto;
-  padding: 1.6em;
-}
-
-code,
-kbd,
-tt,
-var {
-  font-family: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-}
-
-abbr,
-acronym {
-  border-bottom: 1px dotted #666;
-  cursor: help;
-}
-
-mark,
-ins {
-  background: #fff9c0;
-  text-decoration: none;
-}
-
-big {
-  font-size: 125%;
-}
-
-/* Elements
---------------------------------------------- */
-body {
-  background: #fff;
+  font-size: clamp(0.8rem, 1vw, 1rem);
 }
 
 hr {
@@ -513,19 +506,15 @@ table {
 a {
   color: #4169e1;
 }
-
 a:visited {
   color: #800080;
 }
-
 a:hover, a:focus, a:active {
   color: #191970;
 }
-
 a:focus {
   outline: thin dotted;
 }
-
 a:hover, a:active {
   outline: 0;
 }
@@ -533,9 +522,9 @@ a:hover, a:active {
 /* Forms
 --------------------------------------------- */
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type=button],
+input[type=reset],
+input[type=submit] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
@@ -544,61 +533,58 @@ input[type="submit"] {
   line-height: 1;
   padding: 0.6em 1em 0.4em;
 }
-
 button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover {
   border-color: #ccc #bbb #aaa;
 }
-
 button:active, button:focus,
-input[type="button"]:active,
-input[type="button"]:focus,
-input[type="reset"]:active,
-input[type="reset"]:focus,
-input[type="submit"]:active,
-input[type="submit"]:focus {
+input[type=button]:active,
+input[type=button]:focus,
+input[type=reset]:active,
+input[type=reset]:focus,
+input[type=submit]:active,
+input[type=submit]:focus {
   border-color: #aaa #bbb #bbb;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=tel],
+input[type=range],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=color],
 textarea {
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 3px;
 }
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="range"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="color"]:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+input[type=range]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=week]:focus,
+input[type=time]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=color]:focus,
 textarea:focus {
   color: #111;
 }
@@ -610,37 +596,44 @@ select {
 textarea {
   width: 100%;
 }
-/*# sourceMappingURL=style.css.map */
 
-
-/* a supprimer */
-
-.article_section {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 20px;
-  row-gap: 20px;
-  justify-content: center;
-
-
-  max-width: 1500px;
-  margin-left: auto;
-  margin-right: auto;
+/*--------------------------------------------------------------
+# Layout ajouter un ficher _sidebar-content
+--------------------------------------------------------------*/
+.site {
+  /* class body*/
+  display: grid;
+  grid-template-columns: 20vw auto;
+  grid-template-areas: "header header" "sidebar main" "footer footer";
 }
 
-
-
-.article_cours {
-  position: relative;
-
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  padding: 10px 30px;
-  max-width: 50ch;
-  min-height: 400px;
+.site__header, .site__sitebar, .site__main, .site__footer {
+  padding: 1vh 3vw;
+  /*vh top botton, vw left right*/
 }
 
-.article_bouton {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
+/*verify selector dans header.php*/
+.site__header {
+  grid-area: header;
+  background-color: #fffbda;
 }
+
+.site__main {
+  grid-area: main;
+  overflow: hidden;
+  /* Resolves issue with <pre> elements forcing full width. */
+  background-color: #fffef3;
+}
+
+.site__sitebar {
+  /* sidebar dans header */
+  grid-area: sidebar;
+  background-color: #fffbda;
+}
+
+.site__footer {
+  grid-area: footer;
+  background-color: silver;
+}
+
+/*@import "no-sidebar";*//*# sourceMappingURL=style.css.map */

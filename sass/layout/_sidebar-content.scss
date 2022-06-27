@@ -7,22 +7,30 @@
 		"footer footer";
 }
 
+.site__header, .site__sitebar, .site__main, .site__footer {
+	padding: 1vh 3vw; /*vh top botton, vw left right*/
+}
+
 /*verify selector dans header.php*/
 .site__header {
 	grid-area: header;
+	background-color: lighten($color__background-zonegrid, 5%);
+	
 }
 
-.site-main {
+.site__main {
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+	background-color: lighten($color__background-zonegrid, 10%);
 }
 
-.widget-area {
+.site__sitebar { /* sidebar dans header */
 	grid-area: sidebar;
+	background-color: lighten($color__background-zonegrid, 5%);
 }
-
-.site-footer {
+.site__footer {
 	grid-area: footer;
+	background-color:silver;
 }
 
-@import "no-sidebar";
+/*@import "no-sidebar";*/

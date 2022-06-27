@@ -21,5 +21,4 @@ if ( have_posts()):
 <?php endif; ?> 
 </section>
 
-</section>
 <?php get_footer(); ?>
