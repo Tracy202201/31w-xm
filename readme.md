@@ -1,12 +1,11 @@
-# TP-1
+# Exercice 4
 
-## Développement d’une extension et amélioration d’un thème
-
-### Site: https://eddym80.sg-host.com/
+## Développement d’une extension et amélioration d’un thème pour TP2
 
 > Le theme contient le dossier suivant:
 
 #### Dossiers
 
-1. plugins
-2. themes
+1. Une nouvelle version de front-page.php
+2. Un nouveau model « category-cours.php
+3. Un menu adaptatif
