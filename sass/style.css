@@ -483,7 +483,7 @@ html {
   z-index: 1;
 }
 
-.article_section > a h2 {
+.article_section > h2 {
   margin: 0;
   padding: 0;
   font-size: 1.2em;
@@ -494,7 +494,7 @@ html {
   color: #098593;
 }
 
-.article_section > a h2 {
+.article_section > h2 {
   margin: 0;
   padding: 0;
   font-size: 1.5em;
@@ -506,7 +506,7 @@ html {
   color: #fff;
 }
 
-.article_section > a p {
+.article_section > p {
   display: -webkit-box;
   overflow: hidden;
   -webkit-line-clamp: 3;
