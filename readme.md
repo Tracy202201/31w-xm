@@ -7,5 +7,5 @@
 #### Dossiers
 
 1. Une nouvelle version de front-page.php
-2. Un nouveau model « category-cours.php
+2. Un nouveau model category-cours.php
 3. Un menu adaptatif
