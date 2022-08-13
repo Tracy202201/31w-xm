@@ -431,6 +431,11 @@ body {
   background: #fff;
 }
 
+/*Espacement*/
+body {
+  margin: 1em;
+}
+
 /**
 *
 * styles pour h1,h2,h3,h4,h5,h6 et p
