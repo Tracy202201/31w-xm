@@ -18,19 +18,19 @@
 </head>
 
 <body>
-    <?php
-    if (is_front_page()) : ?>
-        <section class="site2">
-        <?php endif; ?>
-
-        <?php
-        if (!is_front_page()) : ?>
-            <section class="site">
-            <?php endif; ?>
+<?php 
+	if (is_front_page()) : ?>
+	<section class="site2">
+	<?php endif;?>
+	<?php 
+	if (!is_front_page()) : ?>
+	<section class="site">
+	<?php endif;?>	
+            
             <header class="site__header">
                 <section class="site__branding">
                     <h1>
-                        <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+                        <a href="<?php echo esc_url(home_url('/')); ?>">
                             <img src="<?php echo get_template_directory_uri(); ?>/tittle.png" width="150" height="150" alt="Logo">
                         </a>
                     </h1>
