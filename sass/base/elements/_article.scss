@@ -13,18 +13,16 @@
 
   .article_cours {
     position: relative;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 10px 30px;
     max-width: 50ch;
     min-height: 400px;
-    transition: all 0.3s ease-in-out;
+    border: 3px solid;
+    border-image: linear-gradient(to right, green, yellow) 1;
+    animation: 10s rotate linear infinite;
   }
 
-  //changement 
-  .article_cours:hover {
-    box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.1);
-  }
-  
+ 
+ 
   
   
    
