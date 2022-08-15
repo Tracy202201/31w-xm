@@ -19,8 +19,9 @@ function mon31w_setup() {
 	add_theme_support( 'custom-background' );
     //avoir plusieur menus
     register_nav_menus( array(
-        'sidebar_menu' => __( 'Sidebar Menu', 'mon_31w' ),
-        'footer_menu'  => __( 'Footer Menu', 'mon_31w' ),
+        'sidebar_menu' => __( 'Menu sidebar', 'mon_31w' ),
+        'footer_menu'  => __( 'Menu footer', 'mon_31w' ),
+        'menu_accueil'  => __( 'Menu accueil', 'mon_31w' ),
     ) );
   
 }
