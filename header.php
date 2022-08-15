@@ -30,7 +30,7 @@
             <header class="site__header">
                 <section class="site__branding">
                     <h1>
-                        <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+                        <a href="<?php echo esc_url(home_url()); ?>" rel="home">
                             <img src="<?php echo get_template_directory_uri(); ?>/tittle.png" width="150" height="150" alt="Logo">
                         </a>
                     </h1>
