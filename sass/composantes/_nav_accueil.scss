@@ -1,0 +1,29 @@
+/**
+*
+*Block menu de la page d'accueil
+**/
+
+
+.menu-accueil-containter{
+    margin-top: 50px;
+}
+
+
+.menu-accueil-containter .menu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-accueil-containter .menu .menu-item{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid#aaa;
+    width: 30%;
+    padding: 1.5rem;
+}
+
+.menu-accueil-containter .menu .menu-item a{
+    text-decoration: none;
+}

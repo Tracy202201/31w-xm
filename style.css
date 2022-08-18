@@ -443,81 +443,56 @@ html {
   color: #b4784c;
 }
 
-/* Composante Navigation
---------------------------------------------- */
-.menu__sidebar {
-  position: absolute;
-  padding-top: 40px;
-  width: 100vw;
-  z-index: 99;
-  top: 0;
-  left: 0;
-  background-color: #000;
-  transform: translateX(-100vw);
-  transition: transform 0.5s;
-}
-@media screen and (min-width: 700px) {
-  .menu__sidebar {
-    position: static;
-    width: 100%;
-    transform: translateX(0vw);
-  }
+/**
+*
+*Block menu de la page d'accueil
+**/
+.menu-accueil-containter {
+  margin-top: 50px;
 }
 
-#burger {
-  display: block;
-  position: absolute;
-  top: 50px;
-  left: 20px;
-  z-index: 100;
-  transform: rotate(0deg);
-  transition: transform 0.5s;
-}
-@media screen and (min-width: 700px) {
-  #burger {
-    display: none;
-  }
+.menu-accueil-containter .menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-#chk-burger {
-  display: none;
-}
-
-#chk-burger:checked ~ .menu__sidebar {
-  transform: translateX(0);
-}
-
-#chk-burger:checked ~ #burger {
-  transform: rotate(90deg);
-}
-
-.menu__sidebar__ul {
-  list-style: none;
+.menu-accueil-containter .menu .menu-item {
+  list-style-type: none;
   margin: 0;
-  padding: 0.5rem, 0;
+  padding: 0;
+  border: 1px solid #aaa;
+  width: 30%;
+  padding: 1.5rem;
 }
 
-.menu__sidebar__ul .menu-item a {
-  display: block;
-  padding: 10px;
-  border-top: 1px solid #999;
-  margin: 2px 0;
+.menu-accueil-containter .menu .menu-item a {
   text-decoration: none;
-  border-radius: 2px;
-  line-height: 1em;
-  border-color: #dcdcdc;
-  color: #f7f7f7;
-  transition: all 0.2s ease;
 }
 
-.menu__sidebar__ul .menu-item a:hover {
-  background-color: #C5C3C6;
-  color: #b4784c;
+.blocs__horizontaux {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-/*--------------------------------------------------------------
-# Base
---------------------------------------------------------------*/
+.blocs__horizontaux article {
+  display: flex;
+  border: 1px solid #333;
+  width: 33%;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  flex-basis: 50%;
+}
+@media screen and (min-width: 700px) {
+  .blocs__horizontaux article {
+    width: 33%;
+  }
+}
+
+/* Base
+--------------------------------------------- */
 /* Elements
 --------------------------------------------- */
 /* style du content des article */

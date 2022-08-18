@@ -61,15 +61,13 @@ Text Domain: 31-w
 
 /* Composante Navigation
 --------------------------------------------- */
-@import "composantes/nav_sidebar"; //navigation sidebar
+@import "composantes/nav_sidebar"; 
+@import "composantes/nav_accueil"; 
+@import "composantes/blocs_horizontaux.scss";
 
-/* Composante Blocs
+
+/* Base
 --------------------------------------------- */
-@import "composantes/blocs__horizontaux"; 
-
-/*--------------------------------------------------------------
-# Base
---------------------------------------------------------------*/
 @import "base/base";
 
 /*--------------------------------------------------------------
