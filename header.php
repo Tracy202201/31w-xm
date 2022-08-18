@@ -20,7 +20,7 @@
 <body>
     <?php
     if (is_front_page()) : ?>
-        <section class="site2">
+        <section class="site">
         <?php endif; ?>
 
         <?php

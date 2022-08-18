@@ -1,3 +1,13 @@
+//menu adaptative pour mobile
+.menu__sidebar {
+    position:absolute;
+    width: 100vw;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color: #000;
+}
+
 
 .menu__sidebar__ul{
     list-style: none;
@@ -26,3 +36,4 @@
     background-color: #C5C3C6;
     color: #b4784c;
 }
+
