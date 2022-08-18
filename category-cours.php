@@ -1,24 +1,39 @@
 <?php get_header(); ?>
+<section class="site__sidebar"> 
+            <?php wp_nav_menu(array(
+                    'menu' =>'',
+                    'container' =>'nav', 
+                    'container_class' =>'menu__sidebar',
+                    'menu_class' => 'menu__sidebar__ul',
+            ))?>
+</section>
 <section class="site__main2">
     <h1>Category Cours</h1>
 
-    <section class="article_section">
+    <div class="article_section">
         <?php
-        if (have_posts()) :
-            while (have_posts()) : the_post(); ?>
+            if ( have_posts() ) :
+            while ( have_posts()) : the_post()?>
+            <a href="<?= get_permalink(); ?>">
+            <div>
                 <?php
-                $lien = '<br> <a class="bouton" href="'
-                    . get_permalink() . '"> '
-                    . get_the_title() . ' </a>';
+                    $title = get_the_title();
+                    $short_title = substr($title, 0, 7);
+                    $title_2 = substr($title, strlen($short_title), -6)
                 ?>
-
-                <article class="article_cours" ­>
-                    <h2><?php the_title(); ?></h2>
-                    <?= wp_trim_words(get_the_content(), 20, $lien) ?>
-                </article>
-
+                    <h4><span><?= $short_title; ?></h4>
+                    <h2></span><?= $title_2 ?></h2>
+                <p>
+                
+                    <?= wp_trim_words(get_the_content(), 48); ?>
+                
+                </p>
+                <small> >> En savoir plus</small>
+            </div>
+            </a>
             <?php endwhile; ?>
         <?php endif; ?>
-    </section>
+    </div>
+</section>
 
     <?php get_footer(); ?>

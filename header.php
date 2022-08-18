@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Template header
  * Ve template est intégré dans tous les modèles de thème
@@ -28,24 +27,20 @@
             <section class="site">
             <?php endif; ?>
             <header class="site__header">
-                <section class="site__branding">
-                    <h1>
-                        <a href="<?php echo esc_url(home_url()); ?>" rel="home">
-                            <img src="<?php echo get_template_directory_uri(); ?>/tittle.png" width="150" height="150" alt="Logo">
-                        </a>
-                    </h1>
-                    <h4>
-                        <?= bloginfo('description'); ?>
-                    </h4>
-                </section>
-                <nav class="site__navigation">
-                    <!--Menu ici -->
 
-                </nav>
+                <section class="site__branding">
+                    <a href="<?php echo esc_url(home_url()); ?>">
+                     <!--<img src="<?php echo get_template_directory_uri(); ?>/logo.png" width="100" height="100" alt="Logo"> -->
+                    </a>
+                    <h2>
+                    <?= bloginfo( 'description' ); ?>
+                    </h2>
+                    <h1 class="site-title">Programme d'intégration multimédia</h1>
+                </section>
             </header>
 
             <section class="site__sidebar">
-                
+                <!-- burger -->
                 <input type="checkbox" name="chk-burger" id="chk-burger">
                 <!--ajouter image burger https://svgbox.net/iconset/hero-solid -->
                 <label for="chk-burger" id="burger"> 

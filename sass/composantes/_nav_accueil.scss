@@ -4,26 +4,42 @@
 **/
 
 
-.menu-accueil-containter{
-    margin-top: 50px;
+.menu-accueil-container{
+    margin:10px;
 }
 
-
-.menu-accueil-containter .menu{
+.menu-accueil-container .menu{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
-.menu-accueil-containter .menu .menu-item{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border: 1px solid#aaa;
-    width: 30%;
-    padding: 1.5rem;
+
+.site__main .site__sidebar {
+    margin:0;
+    padding:0;
 }
 
-.menu-accueil-containter .menu .menu-item a{
+.site__main .site__sidebar ul{
+    margin:0;
+    padding:0;
+}
+
+
+.site__main .site__sidebar ul li {
+    list-style: none;
+}
+
+.site__main .site__sidebar ul li a{
+    display: block;
     text-decoration: none;
+    color:#fff;
+    padding: 20px;
+}
+
+.site__main .site__sidebar ul li a hr{
+    display: none;
+}
+
+.site__main .site__sidebar ul li a span{
+    display: block;
+    border-top:1px solid #999;
 }
