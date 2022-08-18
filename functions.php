@@ -38,6 +38,7 @@ function mon_31w_enqueue() {
 }
 add_action( 'wp_enqueue_scripts', 'mon_31w_enqueue' );
 
+/* --------------------------------------------------------------------- */
 /*
 * Permet de modifier la requete principale de la page d'accueil
 * pour extraire uniquement les articles de categori accueil
@@ -54,6 +55,7 @@ function mon_31w_pre_get_posts_accueil( $query ) {
 }
 add_action( 'pre_get_posts', 'mon_31w_pre_get_posts_accueil' );
 
+/* --------------------------------------------------------------------- */
 /***
  * filter menu 
  */
