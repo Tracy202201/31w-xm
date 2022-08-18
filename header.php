@@ -45,7 +45,14 @@
             </header>
 
             <section class="site__sidebar">
-                <h3 class="">Menu</h3>
+                
+                <input type="checkbox" name="chk-burger" id="chk-burger">
+                <!--ajouter image burger https://svgbox.net/iconset/hero-solid -->
+                <label for="chk-burger" id="burger"> 
+                <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000000" width="32" height="32">
+                </label>
+                
+                
                 <?php wp_nav_menu(array(
                     'menu' => 'menu sidebar',
                     'container' => 'nav',

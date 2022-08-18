@@ -375,17 +375,48 @@ html {
 --------------------------------------------- */
 .menu__sidebar {
   position: absolute;
+  padding-top: 40px;
   width: 100vw;
   z-index: 99;
   top: 0;
   left: 0;
   background-color: #000;
+  transform: translateX(-100vw);
+  transition: transform 0.5s;
 }
 @media screen and (min-width: 700px) {
   .menu__sidebar {
     position: static;
     width: 100%;
+    transform: translateX(0vw);
   }
+}
+
+#burger {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  z-index: 100;
+  transform: rotate(0deg);
+  transition: transform 0.5s;
+}
+@media screen and (min-width: 700px) {
+  #burger {
+    display: none;
+  }
+}
+
+#chk-burger {
+  display: none;
+}
+
+#chk-burger:checked ~ .menu__sidebar {
+  transform: translateX(0);
+}
+
+#chk-burger:checked ~ #burger {
+  transform: rotate(90deg);
 }
 
 .menu__sidebar__ul {
@@ -696,7 +727,7 @@ textarea {
 .site__main2 {
   width: 100%;
   grid-area: unset;
-  background-color: darkgrey;
+  background-color: #F1EEE9;
   padding-bottom: 60px;
   overflow: hidden;
   /* Resolves issue with <pre> elements forcing full width. */
