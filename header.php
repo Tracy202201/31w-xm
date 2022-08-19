@@ -30,7 +30,7 @@
 
                 <section class="site__branding">
                     <a href="<?php echo esc_url(home_url()); ?>">
-                     <!--<img src="<?php echo get_template_directory_uri(); ?>/logo.png" width="100" height="100" alt="Logo"> -->
+                     <img src="<?php echo get_template_directory_uri(); ?>/logo.png" width="100" height="100" alt="Logo">
                     </a>
                     <h2>
                     <?= bloginfo( 'description' ); ?>

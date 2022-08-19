@@ -71,7 +71,6 @@
 	display: grid;
 	min-height: 100vh;
 	grid-template-columns: ($size__site-sidebar) auto;
-	
 	grid-template-areas:
 		"header header"
 		"sidebar sidebar"
@@ -109,6 +108,7 @@
 .site__main2 {
 	width: 100%;
 	grid-area:unset;
+	background-color:#999;
 	padding-bottom: 60px;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 	text-align: center;

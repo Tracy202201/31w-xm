@@ -47,8 +47,7 @@
 	left: 10px;
 	top: -70px;
 	position: absolute;
-	background: linear-gradient(#098593, #e02758);
-	//animation: animate 60s linear infinite;
+	
   }
 
   
@@ -89,7 +88,7 @@
   }
 
 .article_section > a:hover h4{
-	color:#098593
+	color:#EEC373
 	
   }
 
@@ -117,14 +116,11 @@
 
   
 .article_section a small{
-	color:#098593;
+	color:#EEC373;
 	text-align: right;
   }
 
   
-
-
-
   @media screen and (max-width: 1200px) {
     .article_section > a{
 		width: calc(50% - 20px);
