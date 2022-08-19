@@ -10,13 +10,22 @@
 
 #### Le thème contiendra les modèles, modèle de page, composants suivants : 
 1. « category-cours.php » pour afficher la liste des cours
+
 2. « content-cours.php » pour afficher une carte de cours
+
 3. « front-page.php » pour afficher la page d’accueil
+
 4. « single-post.php » pour afficher un article (un cours)
+
 5. « page.php » pour afficher une page standard
+
 6. « 404.php » Pour afficher une erreur 404 quand l’adresse url n’existe pas
+
 7. « search.php » pour afficher les résultats de recherche (optionnel)
+
 8. « template-evenement.php » qui sera utilisé pour l’ensemble des pages événements
+
 9. Une structure de boîte modale
+
 10. Un carrousel animé
 
