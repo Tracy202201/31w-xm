@@ -103,12 +103,13 @@
 	grid-area: main;
 	padding: 20px;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+	background-color:#ECECEC;
 }
 
 .site__main2 {
 	width: 100%;
 	grid-area:unset;
-	background-color:#999;
+	background-color:#ECECEC;
 	padding-bottom: 60px;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 	text-align: center;

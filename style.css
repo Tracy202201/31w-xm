@@ -510,11 +510,13 @@ html {
 
 .blocs__horizontaux article {
   display: flex;
+  background-color: #7D9D9C;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 450px;
   border: 1px solid #aaa;
+  border-radius: 6px;
   flex-basis: 50%;
 }
 @media screen and (min-width: 700px) {
@@ -610,7 +612,7 @@ html {
 .article_section > a::after {
   content: "";
   position: absolute;
-  background-color: #0f1111;
+  background-color: #7D9D9C;
   inset: 1px;
   border-radius: 6px;
 }
@@ -969,12 +971,13 @@ textarea {
   grid-area: main;
   padding: 20px;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+  background-color: #ECECEC;
 }
 
 .site__main2 {
   width: 100%;
   grid-area: unset;
-  background-color: #999;
+  background-color: #ECECEC;
   padding-bottom: 60px;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
   text-align: center;

@@ -7,11 +7,13 @@
 
 .blocs__horizontaux article {
     display: flex;
+    background-color:#7D9D9C;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height : 450px;
     border : 1px solid #aaa;
+    border-radius: 6px;
     flex-basis : 50%;
     @media screen and (min-width : 700px){
         flex-basis : 33%;
