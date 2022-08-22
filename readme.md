@@ -21,11 +21,9 @@
 
 6. « 404.php » Pour afficher une erreur 404 quand l’adresse url n’existe pas
 
-7. « search.php » pour afficher les résultats de recherche (optionnel)
+7. « template-evenement.php » qui sera utilisé pour l’ensemble des pages événements
 
-8. « template-evenement.php » qui sera utilisé pour l’ensemble des pages événements
+8. Une structure de boîte modale
 
-9. Une structure de boîte modale
-
-10. Un carrousel animé
+9. Un carrousel animé
 
