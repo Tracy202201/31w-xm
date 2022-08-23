@@ -459,13 +459,11 @@ html {
   color: #b4784c;
 }
 
-/**
-*
-*Block menu (menu nav en haut) de la page d'accueil
+/**Block menu (menu nav en haut) de la page d'accueil*/
 
 .site__branding .menu__nav__bar__haut{
     overflow: hidden;
-    display: block;
+    display: flex;
 }
 
 .menu__nav__bar__haut ul{
@@ -479,15 +477,46 @@ html {
 }
 
 .menu__nav__bar__haut ul li a{
+  
     text-decoration: none;
     color: #000;
-    padding: 8px;
+    padding: 20px;
 }
 
 .menu__nav__bar__haut ul li a:hover{
     text-decoration: underline;
 }
-**/
+
+/*ajouter couleur pour chaque block*/
+
+.menu__nav__bar__haut ul li:nth-of-type(1n) a{
+  color: white;
+}
+
+.menu__nav__bar__haut ul li:nth-of-type(2n){
+ background-color:green;
+  color: white;
+}
+
+.menu__nav__bar__haut ul li:nth-of-type(3n){
+   background-color:purple;
+  color: white;
+}
+.menu__nav__bar__haut ul li:nth-of-type(4n){
+   background-color:rosybrown;
+  color: white;
+}
+
+/*menu reponseive*/
+
+@media screen and (max-width: 600px) {
+  .menu__nav__bar__haut ul li:not(:first-child) {display: none;}
+  }
+
+
+
+}
+
 /**
 *
 *Block menu (menu side bar) de la page d'accueil
