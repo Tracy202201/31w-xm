@@ -15,7 +15,7 @@
 
 3. « front-page.php » pour afficher la page d’accueil
 
-4. « single-post.php » pour afficher un article (un cours)
+4. « single-post.php » pour afficher un article (ex. un cours)
 
 5. « page.php » pour afficher une page standard
 

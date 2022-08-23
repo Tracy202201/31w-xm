@@ -1,8 +1,7 @@
 /**
 *
-*Block menu de la page d'accueil
+*Block menu (menu side bar) de la page d'accueil
 **/
-
 
 .menu-accueil-container{
     margin:10px;
@@ -10,6 +9,7 @@
 
 .menu-accueil-container .menu{
     display: flex;
+    position: relative;
 }
 
 
@@ -43,3 +43,5 @@
     display: block;
     border-top:1px solid #999;
 }
+
+

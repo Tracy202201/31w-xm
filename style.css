@@ -461,7 +461,36 @@ html {
 
 /**
 *
-*Block menu de la page d'accueil
+*Block menu (menu nav en haut) de la page d'accueil
+
+.site__branding .menu__nav__bar__haut{
+    overflow: hidden;
+    display: block;
+}
+
+.menu__nav__bar__haut ul{
+    float: right;
+    list-style-type: none;
+}
+
+.menu__nav__bar__haut ul li{
+    list-style: none;
+    display: inline;
+}
+
+.menu__nav__bar__haut ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 8px;
+}
+
+.menu__nav__bar__haut ul li a:hover{
+    text-decoration: underline;
+}
+**/
+/**
+*
+*Block menu (menu side bar) de la page d'accueil
 **/
 .menu-accueil-container {
   margin: 10px;
@@ -469,6 +498,7 @@ html {
 
 .menu-accueil-container .menu {
   display: flex;
+  position: relative;
 }
 
 .site__main .site__sidebar {

@@ -32,11 +32,20 @@
                     <a href="<?php echo esc_url(home_url()); ?>">
                      <img src="<?php echo get_template_directory_uri(); ?>/logo.png" width="100" height="100" alt="Logo">
                     </a>
-                    <h2>
-                    <?= bloginfo( 'description' ); ?>
-                    </h2>
+
+                    <!-- Menu en haut -->
+                    
+                    <?php wp_nav_menu(array(
+                        'menu' => 'nav bar haut',
+                        'container' => 'nav',
+                        'container_class' => 'menu__nav__bar__haut',
+                        'menu_class' => 'menu__nav__bar__haut__ul',
+                    )) ?>
+                    
+
                     <h1 class="site-title">Programme d'intégration multimédia</h1>
                 </section>
+
             </header>
 
             <section class="site__sidebar">

@@ -72,3 +72,32 @@
     color: #b4784c;
 }
 
+/**
+*
+*Block menu (menu nav en haut) de la page d'accueil
+
+.site__branding .menu__nav__bar__haut{
+    overflow: hidden;
+    display: block;
+}
+
+.menu__nav__bar__haut ul{
+    float: right;
+    list-style-type: none;
+}
+
+.menu__nav__bar__haut ul li{
+    list-style: none;
+    display: inline;
+}
+
+.menu__nav__bar__haut ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 8px;
+}
+
+.menu__nav__bar__haut ul li a:hover{
+    text-decoration: underline;
+}
+**/
