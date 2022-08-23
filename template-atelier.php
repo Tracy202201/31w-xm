@@ -28,19 +28,14 @@
          echo "<p class='annonce__type'>Le type: " . $type . "</p>";
          echo "<p class='annonce__date'>La date: " . $date . "</p>";
          echo "<p class='annonce__duree'>Le duree: " . $duree . "</p>";
-         echo "<p class='annonce__date'>La date: " . $date . "</p>";
-
-
-
-         echo "<p class='annonce__heure'>L'heure: " . $heure . "</p>";
-         echo "<p class='annonce__organisateur'>Le responsable de l'événement: " . $organisateur . "</p>";
+         echo "<p class='annonce__jours'>Les jours: " . $jours. "</p>";
+         echo "<p class='annonce__nombreheure'>Les nombre heure: " . $nombreheure. "</p>";
+         echo "<p class='annonce__niveau'>Le niveau: " . $niveau. "</p>";
+         echo "<p class='annonce__lieu'>L'lieu: " . $lieu . "</p>";
+         echo "<p class='annonce__prix'>Le prix " . $prix. "</p>";
 
         // $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
       
-         $image = get_field('image');
-         if( !empty( $image ) ): ?>
-             <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-         <?php endif; ?>
          ?>
       </article>
       <?php endif ?>
