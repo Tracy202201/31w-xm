@@ -2,7 +2,7 @@
 
 ### Site: https://eddym80.sg-host.com/
 
-### Github https://github.com/Tracy202201/31w-xm/tree/epreuve-finale 
+### Github: https://github.com/Tracy202201/31w-xm/tree/epreuve-finale 
 
 #### Le thème contiendra les modèles, modèle de page, composants suivants : 
 
