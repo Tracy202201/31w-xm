@@ -72,7 +72,7 @@
     color: #b4784c;
 }
 
-Block menu (menu nav en haut) de la page d'accueil
+//Block menu (menu nav en haut) de la page d'accueil
 
 .site__branding .menu__nav__bar__haut{
     overflow: hidden;
@@ -98,3 +98,26 @@ Block menu (menu nav en haut) de la page d'accueil
 .menu__nav__bar__haut ul li a:hover{
     text-decoration: underline;
 }
+
+.menu__nav__bar__haut ul li:nth-of-type(1n){
+    background-color: blue;
+     color: white;
+ }
+ 
+ .menu__nav__bar__haut ul li:nth-of-type(1n) a{
+     color: white;
+ }
+ 
+ .menu__nav__bar__haut ul li:nth-of-type(2n){
+    background-color:green;
+     color: white;
+ }
+ 
+ .menu__nav__bar__haut ul li:nth-of-type(3n){
+      background-color:purple;
+     color: white;
+ }
+ .menu__nav__bar__haut ul li:nth-of-type(4n){
+      background-color:rosybrown;
+     color: white;
+ }
