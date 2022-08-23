@@ -24,9 +24,14 @@
          $lieu = get_field("lieu");
          $prix = get_field("prix");
 
-         echo "<p class='annonce__resume'>" . 'klkllkllklkjlk' . $description . "</p>";
-         echo "<p class='annonce__lieu'>Le lieu: " . $endroit . "</p>";
+         echo "<p class='annonce__resume'>" . 'Le animateur' . $animateur . "</p>";
+         echo "<p class='annonce__type'>Le type: " . $type . "</p>";
          echo "<p class='annonce__date'>La date: " . $date . "</p>";
+         echo "<p class='annonce__duree'>Le duree: " . $duree . "</p>";
+         echo "<p class='annonce__date'>La date: " . $date . "</p>";
+
+
+
          echo "<p class='annonce__heure'>L'heure: " . $heure . "</p>";
          echo "<p class='annonce__organisateur'>Le responsable de l'événement: " . $organisateur . "</p>";
 
