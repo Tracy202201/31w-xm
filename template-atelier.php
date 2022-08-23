@@ -1,57 +1,44 @@
 <?php
-   /**
-    * Template name: atelier
-    * créer la page template en php
-    *  Créer le menu ACF avec comme template cette page
-    * Créer une page wordpress avec ce template
-    * Ajouter nom du menu dans menu__nav__bar__haut
-    */
+/**
+ * Template name: Évenement -atelier
+ */
 ?>
-<!-- structure d'une page actualite -->
-<?php get_header(); ?>
+<?php get_header() ?>  
 
-<section class="site__main">
-    <mark>Atelier</mark>
-    <div class=''>
-        <?php if (have_posts()):  
-            while ( have_posts()) : the_post()?>
-        
-            <article class="annonce__article">
-                <h1><?= get_the_title(); ?></h1>
-                <?php the_content(); ?>
-                <?php 
-                    $endroit = get_field('endroit');
-                    if( !empty( $endroit ) ): ?>
-                        <h3><?=$endroit ?></h3>
-                    <?php endif; 
-                    $description = get_field('description');
-                    if( !empty( $description ) ): ?>
-                        <p><?=$description ?></p>
-                    <?php endif; 
-                    $image = get_field('image');
-                    if( !empty( $image ) ): ?>
-                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                    <?php endif;
-                    $endroit = get_field('endroit');
-                    if( !empty( $endroit ) ): ?>
-                        <p><?=$endroit ?></p>
-                    <?php endif;
-                    $date = get_field('date');
-                    if( !empty( $date ) ): ?>
-                        <p><?=$date ?></p>
-                    <?php endif;
-                    $heure = get_field('heure');
-                    if( !empty( $heure ) ): ?>
-                        <p><?=$heure ?></p>
-                    <?php endif;
-                    $organisateur = get_field('organisateur');
-                    if( !empty( $organisateur ) ): ?>
-                        <p><?=$organisateur ?></p>
-                <?php endif;?>
-            </article>
-            </a>
-        <?php endwhile;?>
-    <?php endif;?>
-</div>
-</section>
-<?php get_footer(); ?>
+<main class="site__main">
+
+   <?php //the_post_thumbnail("annonce"); ?>
+   <mark>Événement à venir</mark>
+       <?php if (have_posts()): the_post(); ?>
+      <article class="annonce__article">
+         <h1><?= get_the_title() ?></h1>
+         <?php the_content(); ?>
+         <?php
+         $animateur = get_field("animateur");
+         $type = get_field("type");
+         $date = get_field("date");
+         $duree = get_field("duree");
+         $jours = get_field("jours");
+         $nombreheure = get_field("nombreheure");
+         $niveau = get_field("niveau");
+         $lieu = get_field("lieu");
+         $prix = get_field("prix");
+
+         echo "<p class='annonce__resume'>" . 'klkllkllklkjlk' . $description . "</p>";
+         echo "<p class='annonce__lieu'>Le lieu: " . $endroit . "</p>";
+         echo "<p class='annonce__date'>La date: " . $date . "</p>";
+         echo "<p class='annonce__heure'>L'heure: " . $heure . "</p>";
+         echo "<p class='annonce__organisateur'>Le responsable de l'événement: " . $organisateur . "</p>";
+
+        // $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
+      
+         $image = get_field('image');
+         if( !empty( $image ) ): ?>
+             <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+         <?php endif; ?>
+         ?>
+      </article>
+      <?php endif ?>
+  
+</main>
+<?php get_footer() ?>

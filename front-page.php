@@ -23,6 +23,13 @@
 
         )) ?>
     </section>
+    <section class="site__sidebar">
+        <?php wp_nav_menu(array(
+            'menu' => 'accueil',
+            'container' => 'nav'
+
+        )) ?>
+    </section>
 </section>
 
 <?php get_footer(); ?>
